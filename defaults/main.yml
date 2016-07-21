@@ -38,3 +38,6 @@ repo_recreate_keys: False
 
 # Main web server port
 repo_server_port: 8181
+
+repo_pkg_cache_port: 3142
+repo_pkg_cache_bind: "0.0.0.0"

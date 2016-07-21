@@ -70,6 +70,7 @@
     - { path: "/etc/nginx/sites-enabled/default", state: "absent", mode: "0644" }
     - { path: "/etc/nginx/sites-available", state: "directory", mode: "0644" }
     - { path: "/etc/nginx/sites-enabled", state: "directory", mode: "0644" }
+    - { path: "{{ repo_service_home_folder }}/repo/pkg-cache", state: "directory", owner: "apt-cacher-ng", group: "{{ repo_service_group_name }}", mode: "2755" }
   tags:
     - pkg-repo-dirs
 
